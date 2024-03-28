@@ -31,6 +31,9 @@ export function checkPermi(value) {
  * @returns {Boolean}
  */
 export function checkRole(value) {
+  console.log("====permission");
+  console.log(value);
+  
   if (value && value instanceof Array && value.length > 0) {
     const roles = useUserStore().roles
     const permissionRoles = value
